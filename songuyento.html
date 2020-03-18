@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test giữa Module 1</title>
+</head>
+<body>
+<h8>Enter a number </h8>
+<input type="number" id="number"/>
+<button type="button" onclick="show()" value="Show">Show</button><br>
+<div id="result"></div>
+<script>
+    function checkprime(numb) {
+        let flag = true ;
+        for (i = 0; i < numb;i++) {
+            if (numb % i === 0) {
+                flag = false
+            }
+        }
+            return flag;
+    }
+    function show() {
+        let number1 = document.getElementById("number").value;
+        let i = 2 ;
+        if (number1>0){
+            let kq =" ";
+        while ( i < number1){
+                if(checkprime(i)){kq += i + ",";i++
+                }
+            }
+            document.getElementById("result").value = kq;
+        }else{
+            alert("Bạn vui lòng ấn F5 để nhập lại từ đầu");
+        }
+    }
+
+</script>
+</body>
+</html>

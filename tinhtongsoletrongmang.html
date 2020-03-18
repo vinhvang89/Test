@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng số lẻ trong mảng </title>
+</head>
+<body>
+<script>
+    let length = parseInt(prompt("Nhập vào số phần tử trong mảng"));
+    let array1 = new Array(length);
+    for ( i = 0 ; i < length; i++){
+        array1[i] = parseInt(prompt("Nhập vào phần tử thứ "+i+" của mảng :"));
+    }
+    function tongsole(array) {
+        let sum = 0 ;
+        for ( i = 0 ; i < array.length;i++){
+            if ( array[i] % 2 === 1){ sum += array[i]}
+        }
+        return sum;
+    }
+    let a = tongsole(array1);
+    alert(a);
+</script>
+
+</body>
+</html>

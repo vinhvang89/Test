@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm tính tuổi</title>
+</head>
+<body>
+<script>
+    let yeartoBorn = parseInt(prompt("Nhập vào năm sinh của bạn :"));
+    function countAges(year) {
+        let d = new Date();
+        let age ;
+        if ( yeartoBorn > d.getFullYear() || yeartoBorn < d.getFullYear() - 150)
+        { alert("Số năm sinh của bạn không đúng hoặc bạn không thể sống lâu như thế") }
+        else { age = d.getFullYear() - year ; return age;}
+    }
+    document.write("Số tuổi của bạn là :" + countAges(yeartoBorn));
+</script>
+</body>
+</html>
