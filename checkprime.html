@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function checkprime(x) {
+    function checkPrime(x) {
         let flag = true;
         if ( x >= 2){
         for (i=2;i<x;i++){
@@ -18,7 +18,7 @@
     function sum_prime(array) {
         let sum = 0;
         for (j=0;j<array.length ;j++){
-            if (checkprime(array[j]) === true) {
+            if (checkPrime(array[j]) === true) {
                 sum += array[j];
                 console.log(array[j]);
             }
@@ -28,6 +28,7 @@
     let array1 = [2,8,3,11,19,31,22,80,89,44];
     let a = sum_prime(array1);
     document.write(a);
+
 </script>
 </body>
 </html>
